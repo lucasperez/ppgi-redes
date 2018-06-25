@@ -21,6 +21,6 @@ class PackageThread
        )  
       @results << test.run.download_rate / 1024 / 1024
     end
-    return @results.sum / @results.size
+    return (@results.sum / @results.size).round(2)
   end
 end

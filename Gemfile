@@ -2,4 +2,4 @@ source "https://rubygems.org"
 
 gem 'speedtest'
 gem 'activesupport'
-gem 'svg-graph'
+gem 'wicked_pdf'
