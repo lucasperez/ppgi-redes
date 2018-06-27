@@ -16,7 +16,7 @@ class PackageSizeReport
     report_text = report_text + "<p>Testando com arquivo de 4mb 3x e pegando a média </p>"
     test_4000_kb = PackageSize.new(4000, 3).execute_test
 
-    report_text = report_text + "<table class='table table-bordered'><tr><th>Arquivo de 350kb</th><th>Arquivo de 1mb</th><th>Arquivo de 4mb</th></tr><tr><td>#{test_350_kb}</td><td>#{test_1000_kb}</td><td>#{test_4000_kb}</td></tr></table>"
+    report_text = report_text + "<table class='table table-bordered'><tr><th>Arquivo de 350kb</th><th>Arquivo de 1mb</th><th>Arquivo de 4mb</th></tr><tr><td>#{test_350_kb} Mb/s</td><td>#{test_1000_kb} Mb/s</td><td>#{test_4000_kb} Mb/s</td></tr></table>"
 
     report_text = report_text + "<div class='well'>Percebemos que quanto mais aumentamos o tamanho dos pacotes maior a velocidade de conexão<br><br></div>"
 

@@ -16,9 +16,9 @@ class IntervalReport
     report_text = report_text + "<p>Agora vamos repetir o mesmo teste aumentando o intervalo entre os pacotes pra ver se isso altera o valor médio. Testando com intervalo de 2 minutos.</p>"
     test_2_minutes = Interval.new(2.minutes, 1).execute_test
 
-    report_text = report_text + "<table class='table table-bordered'><tr><th>Intervalo de 0.5 minutos</th><th>Intervalo de 1 minuto</th><th>Intervalo de 2 minutos</th></tr><tr><td>#{test_0_5_minute}</td><td>#{test_1_minute}</td><td>#{test_2_minutes}</td></tr></table>"
+    report_text = report_text + "<table class='table table-bordered'><tr><th>Intervalo de 0.5 minutos</th><th>Intervalo de 1 minuto</th><th>Intervalo de 2 minutos</th></tr><tr><td>#{test_0_5_minute} Mb/s</td><td>#{test_1_minute} Mb/s</td><td>#{test_2_minutes} Mb/s</td></tr></table>"
 
-    report_text = report_text + "<div class='well'>Percebemos que o intervalo entre pacotes não alterou a velocidade de conexão<br><br></div>"
+    report_text = report_text + "<div class='well'>Percebemos que o intervalo entre pacotes não teve efeito na velocidade de conexão<br><br></div>"
 
     return report_text
   end
